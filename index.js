@@ -4,6 +4,34 @@ window.onload = () => {
 
 	getRexBookingCheckInInputElm().value = getTodaysDate();
 	getRexBookingCheckOutInputElm().value = getTodaysDate();
+
+	getForm().addEventListener("submit", (e) => {
+		e.preventDefault();
+		let checkin = getRexBookingCheckInInputElm().value;
+		let checkout = getRexBookingCheckOutInputElm().value;
+		let adults = getAdultsElm().value;
+		let children = getChildrenElm().value;
+		let promo = getPromoElm().value;
+
+		if(!checkin){
+			checkin = getTodaysDate();
+		}
+
+		if(!checkout){
+			checkout = getTodaysDate();
+		}
+
+		let propertyID = 2001;
+
+		let urlEncodedString = "";
+
+		urlEncodedString = 'propertyID='+propertyID+'&checkin='+checkin+'&checkout='+checkout+'&adults='+adults+'&children='+children;
+		if(promo){
+			urlEncodedString += '&promo='+promo;
+		}
+
+		window.open('https://res.windsurfercrs.com/ibe/index.aspx?'+urlEncodedString, '_self');
+	});
 }
 
 function getTodaysDate(){
@@ -32,10 +60,30 @@ function setDatePicker(elem){
 	}); 
 }
 
+function getForm(){
+	return document.getElementById("rex-form");
+}
+
 function getRexBookingCheckInInputElm(){
 	return document.getElementById("rexBookingCheckInInput");
 }
 
 function getRexBookingCheckOutInputElm(){
 	return document.getElementById("rexBookingCheckOutInput");
+}
+
+function getCheckoutElm(){
+	return document.getElementById("checkout");
+}
+
+function getAdultsElm(){
+	return document.getElementById("adult");
+}
+
+function getChildrenElm(){
+	return document.getElementById("children");
+}
+
+function getPromoElm(){
+	return document.getElementById("promo");
 }
