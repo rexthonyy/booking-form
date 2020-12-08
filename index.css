@@ -1,0 +1,353 @@
+*{
+    outline: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(220, 220, 220);
+    
+    font-family: sans-serif;
+}
+
+#rex-ul li:nth-child(1){
+    display: none;
+}
+
+.rex-position-relative{
+    position: relative;
+}
+
+.rex-z-index-1{
+    z-index: -1;
+}
+
+.rex-no-border{
+    border: 0;
+}
+
+.rex-border{
+    border: 1px solid black;
+}
+
+.rex-width-100pp{
+    width: 100%;
+}
+
+.rex-width-1px{
+    width: 1px;
+}
+
+.rex-width-1000px{
+    width: 1000px;
+}
+
+.rex-width-100px{
+    width: 100px;
+}
+
+.rex-height-22px{
+    height: 22px;
+}
+
+.rex-primary-bg-color{
+    background-color: rgba(204, 232, 247, 0.8);
+}
+
+.rex-secondary-bg-color{
+    background-color: rgb(59, 96, 175);
+}
+
+.rex-secondary-bg-color:hover{
+    cursor: pointer;
+    background-color: rgb(69, 106, 185);
+}
+
+.rex-white-bg-color{
+    background-color: white;
+}
+
+.rex-color-white{
+    color: white;
+}
+
+.rex-center-div-horizontally{
+    margin: 0 auto;
+}
+
+.rex-padding-0px{
+    padding: 0px;
+}
+
+.rex-padding-32px{
+    padding: 32px;
+}
+
+.rex-padding-16px{
+    padding: 16px;
+}
+
+.rex-margin-0px{
+    margin: 0px;
+}
+
+.rex-float-height-hook{
+    clear: both;
+}
+
+.rex-float-right{
+    float: right;
+}
+
+.rex-fs-large{
+    font-size: 1.4em;
+}
+
+.rex-fs-normal{
+    font-size: 0.9em;
+}
+
+.rex-fs-small{
+    font-size: 0.76em;
+}
+
+.rex-bold{
+    font-weight: bold;
+}
+
+.rex-primary-color{
+    color: rgb(59, 96, 175);
+}
+
+.rex-padding-4px{
+    padding: 4px;
+}
+
+.rex-padding-3px{
+    padding: 3px;
+}
+
+.rex-mt-3px{
+    margin-top: 3px;
+}
+
+.rex-mt-4px{
+    margin-top: 4px;
+}
+
+.rex-mt-8px{
+    margin-top: 8px;
+}
+
+.rex-mb-3px{
+    margin-bottom: 3px;
+}
+
+.rex-mb-4px{
+    margin-bottom: 4px;
+}
+
+.rex-mb-8px{
+    margin-bottom: 8px;
+}
+
+.rex-mr-8px{
+    margin-right: 8px;
+}
+
+.rex-mr-16px{
+    margin-right: 16px;
+}
+
+.rex-mr-32px{
+    margin-right: 32px;
+}
+
+.rex-ml-16px{
+    margin-left: 16px;
+}
+
+.rex-ml-32px{
+    margin-left: 32px;
+}
+
+.rex-pt-2px{
+    padding-top: 2px;
+}
+
+.rex-pt-4px{
+    padding-top: 4px;
+}
+
+.rex-pr-4px{
+    padding-right: 8px;
+}
+
+.rex-pr-16px{
+    padding-right: 16px;
+}
+
+.rex-pr-20px{
+    padding-right: 20px;
+}
+
+.rex-pb-2px{
+    padding-bottom: 2px;
+}
+
+.rex-pb-4px{
+    padding-bottom: 8px;
+}
+
+.rex-pl-32px{
+    padding-left: 32px;
+}
+
+.rex-lh-4px{
+    line-height: 1.8em;
+}
+
+.rex-lh-9px{
+    line-height: 9em;
+}
+
+.rex-fa-icon{
+    position: relative;
+    width: 12px;
+    left: -19px;
+}
+
+.rex-hover{
+    cursor: pointer;
+}
+
+.rex-hidden{
+    display: none;
+}
+
+ul.rex-display-ul-inline-block li{
+    display: inline-block;
+}
+
+.rex-vertical-align{
+    vertical-align: middle;
+}
+
+.rex-width-16px{
+    width: 16px;
+}
+
+.rex-width-80px{
+    width: 80px;
+}
+
+.rex-width-60px{
+    width: 70px;
+}
+
+.rex-height-16px{
+    height: 16px;
+}
+
+.rex-book-now-height{
+    height: 63px;
+}
+
+.rex-pl-32px{
+    padding-left: 32px;
+}
+
+.rex-pr-32px{
+    padding-right: 32px;
+}
+
+.rex-centerText{
+    text-align: center;
+}
+
+.rex-btn-primary{
+    background-color: rgb(59, 96, 175);
+    color: white;
+    font-weight: bold;
+}
+
+.rex-btn-primary:hover{
+    cursor: pointer;
+    background-color: rgb(69, 106, 185);
+}
+
+@media (max-width: 1000px){
+    #rex-form{
+        width: 800px;
+    }
+    #rex-reserve-your-stay{
+        display: none;
+    }
+    .rex-checkin-input{
+        width: 100px;
+    }
+    .rex-select-input{
+        width: 100px;
+    }
+    .rex-text-input{
+        width: 100px;
+    }
+}
+
+@media (max-width: 800px){
+    #rex-form{
+        width: 100%;
+    }
+    #rex-checkbox-toggler{
+        display: block;
+    }
+    #rex-checkbox{
+        display: none; /*make it none in production*/
+    }
+    #rex-ul{
+        margin: 0;
+        padding: 0;
+    }
+    #rex-ul{
+        display: none;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        padding: 50px;
+        background-color: white;
+        top: 0;
+        left: 0;
+        transition: all 0s;
+        overflow: auto;
+    }
+    #rex-checkbox:checked ~ ul{
+        display: block;
+    }
+
+    #rex-reserve-your-stay{
+        text-align: center;
+    }
+    #rex-ul li:nth-child(1){
+        display: block;
+    }
+    .rex-fa-icon{
+        position: absolute;
+        left: -999;
+    }
+    #rex-ul li input, #rex-ul li select{
+        height: 32px;
+        padding: 0;
+        margin: 0;
+        margin-top: 4px;
+        width: 100%;
+        border: 2px solid rgb(59, 96, 175);
+    }
+    
+    #rex-ul li{
+        display: block;
+        margin: 30px 0;
+    }
+    
+}
+

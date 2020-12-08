@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Booking form</title>
+    <link type="text/css" rel="stylesheet" href="index.css"/>
+    <link type="text/css" rel="stylesheet" href="datepicker.min.css"/>
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="datepicker-full.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+   <form class="rex-width-1000px rex-primary-bg-color rex-center-div-horizontally" id="rex-form" method="GET" action="https://res.windsurfercrs.com/ibe/index.aspx">
+        <label for="rex-checkbox" class="rex-hidden" id="rex-checkbox-toggler">
+            <p class="rex-centerText rex-bold rex-secondary-bg-color rex-padding-16px rex-color-white">
+                CHECK AVAILABILITY AND BOOK NOW
+            </p>
+        </label>
+        <input class="rex-hidden" type="checkbox" id="rex-checkbox">
+
+        <ul class="rex-float-right rex-display-ul-inline-block rex-margin-0px" id="rex-ul">
+            <li>
+                <label for="rex-checkbox">
+                    <i class="fa fa-times rex-float-right rex-hover"></i>
+                </label>
+            </li>
+            <li class="rex-fs-large rex-bold rex-primary-color rex-mr-16px rex-vertical-align" id="rex-reserve-your-stay">
+                Reserve Your Stay
+            </li>
+            <li class="rex-vertical-align rex-mr-16px rex-ml-16px">
+                <label class="rex-fs-small rex-primary-color rex-pb-4px" for="rexBookingCheckInInput">CHECK-IN</label><br/>
+                <input class="rex-width-100px rex-no-border rex-height-22px rex-mt-3px rex-pr-20px rex-hover rex-checkin-input" type="text" id="rexBookingCheckInInput" name="checkin"><i class="fa fa-calendar rex-fa-icon"> </i>
+                </span>
+            </li>
+            <li class="rex-vertical-align rex-mr-16px">
+                <label class="rex-fs-small rex-primary-color rex-pb-4px" for="rexBookingCheckOutInput">CHECK-OUT</label><br/>
+                <input class="rex-width-100px rex-no-border rex-height-22px rex-mt-3px rex-pr-20px rex-hover rex-checkin-input" type="text" name="checkout" id="rexBookingCheckOutInput"><i class="fa fa-calendar rex-fa-icon"> </i>
+
+            </li>
+            <li class="rex-vertical-align rex-mr-16px">
+                <label class="rex-fs-small rex-primary-color rex-pb-4px" for="adult">ADULT</label><br/>
+                <select class="rex-width-100px rex-no-border rex-mt-3px rex-hover rex-height-22px rex-select-input" name="adults" id="adult">
+                    <option value="1" selected>1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </li>
+            <li class="rex-vertical-align rex-mr-16px">
+                <label class="rex-fs-small rex-primary-color rex-pb-4px" for="children">CHILDREN</label><br/>
+                <select class="rex-width-100px rex-no-border rex-mt-3px rex-hover rex-height-22px rex-select-input" name="children" id="children">
+                    <option value="0" selected>0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </li>
+            <li class="rex-vertical-align rex-mr-16px">
+                <label class="rex-fs-small rex-primary-color rex-pb-4px" for="promo">PROMO</label><br/>
+                <input class="rex-width-80px rex-no-border rex-height-22px rex-mt-3px rex-text-input" type="text" name="promo" id="promo">
+            </li>
+            <li class="rex-vertical-align">
+                <input class="rex-width-100pp rex-book-now-height rex-pr-32px rex-pl-32px rex-btn-primary rex-fs-normal rex-no-border rex-vertical-align" type="submit" value="BOOK NOW"/>
+            </li>            
+        </ul>
+        <div class="rex-float-height-hook"></div>
+   </form>
+</body>
+</html>
